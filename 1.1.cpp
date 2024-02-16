@@ -8,6 +8,7 @@
 
 int main()
 {
+	system("chcp 1251");
 	enter();
 	print();
 	find_names_starting_with_A();
