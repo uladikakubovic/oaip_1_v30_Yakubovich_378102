@@ -16,7 +16,7 @@ extern void enter()
 {	
 	std::ofstream file("data.txt");
 	setlocale(LC_ALL, "rus");
-	file << "Ã”ÃˆÃŽ					ÃƒÃ®Ã¤ Ã°Ã®Ã¦Ã¤Ã¥Ã­Ã¨Ã¿		ÃƒÃ®Ã¤ Ã¯Ã®Ã±Ã²Ã³Ã¯Ã«Ã¥Ã­Ã¨Ã¿			Ã”Ã¨Ã§Ã¨ÃªÃ 		ÃŒÃ Ã²Ã¥Ã¬		ÃˆÃ­Ã´Ã®Ã°Ã¬Ã Ã²Ã¨ÃªÃ \n";
+	file << "ÔÈÎ					Ãîä ðîæäåíèÿ		Ãîä ïîñòóïëåíèÿ			Ôèçèêà		Ìàòåì		Èíôîðìàòèêà\n";
 	
 	for (int a = 0; a < 4; a++)
 	{
@@ -26,17 +26,17 @@ extern void enter()
 			std::cin.ignore();
 		}
 		file << ' ';
-		std::cout << "Ã”ÃˆÃŽ: ";
+		std::cout << "ÔÈÎ: ";
 		std::cin.getline(data[a].full_name, 40);
-		std::cout << "ÃƒÃ®Ã¤ Ã°Ã®Ã¦Ã¤Ã¥Ã­Ã¨Ã¿: ";
+		std::cout << "Ãîä ðîæäåíèÿ: ";
 		std::cin >> data[a].birth_date;
-		std::cout << "ÃƒÃ®Ã¤ Ã¯Ã®Ã±Ã²Ã³Ã¯Ã«Ã¥Ã­Ã¨Ã¿: ";
+		std::cout << "Ãîä ïîñòóïëåíèÿ: ";
 		std::cin >> data[a].attending_date;
-		std::cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã´Ã¨Ã§Ã¨ÃªÃ¥: ";
+		std::cout << "Îöåíêà ïî ôèçèêå: ";
 		std::cin >> data[a].physics_grade;
-		std::cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã¬Ã Ã²Ã¥Ã¬Ã Ã²Ã¨ÃªÃ¥: ";
+		std::cout << "Îöåíêà ïî ìàòåìàòèêå: ";
 		std::cin >> data[a].math_grade;
-		std::cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã¨Ã­Ã´Ã®Ã°Ã¬Ã Ã²Ã¨ÃªÃ¥: ";
+		std::cout << "Îöåíêà ïî èíôîðìàòèêå: ";
 		std::cin >> data[a].IT_grade;
 		system("cls");
 		file << data[a].full_name << "\t\t" << data[a].birth_date << "\t\t\t\t" << data[a].attending_date << "\t\t" << data[a].physics_grade << "\t\t" << data[a].math_grade << "\t\t" << data[a].IT_grade<< '\n';
